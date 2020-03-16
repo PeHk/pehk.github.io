@@ -1,11 +1,15 @@
 h1 {
-    font-size: 2px;
-    padding: 20px 0 20px 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15em;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif!important;
 }
 
 h2 {
-    
+    font-size: 4em;
+}
+
+.firstSection {
+    height: 100vh;
+    line-height: 90vh;
 }
 
 body {
@@ -18,5 +22,9 @@ body {
 
 p {
     padding: 10px;
+}
+
+.image {
+    
 }
 
