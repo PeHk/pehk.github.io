@@ -1,16 +1,12 @@
 h1 {
-    font-size: 15em;
+    font-size: 13em;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif!important;
     display: block;
 }
 
-.subtitle {
-    font-size: 2em;
-    color: darkgray;
-}
-
 h2 {
     font-size: 4em;
+    padding-bottom: 10px;
 }
 
 .firstSection {
@@ -25,8 +21,19 @@ body {
     border-radius: 10px;
 }
 
+.fade {
+    opacity: 1;
+}
+
 p {
-    padding: 10px;
+    text-align: justify;
+}
+
+.subtitle {
+    font-size: 2em;
+    color: darkgray;
+    display: block;
+    text-align: center;
 }
 
 .appStore {
