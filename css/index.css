@@ -1,6 +1,12 @@
 h1 {
     font-size: 15em;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif!important;
+    display: block;
+}
+
+.subtitle {
+    font-size: 2em;
+    color: darkgray;
 }
 
 h2 {
@@ -8,8 +14,7 @@ h2 {
 }
 
 .firstSection {
-    height: 100vh;
-    line-height: 90vh;
+    height: 90vh;
 }
 
 body {
@@ -24,7 +29,55 @@ p {
     padding: 10px;
 }
 
-.image {
+.appStore {
+    width: 10%;
+    padding-bottom: 20px;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 10em;
+    }
+    .subtitle {
+        font-size: 1.5em;
+    }
     
+    .appStore {
+        width: 20%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8em;
+    }
+    .subtitle {
+        font-size: 1em;
+    }
+    
+    .appStore {
+        width: 30%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    h1 {
+        font-size: 5em;
+    }
+    .subtitle {
+        font-size: 0.9em;
+    }
+    
+    .appStore {
+        width: 40%;
+        padding-bottom: 20px;
+    }
 }
 
