@@ -145,5 +145,9 @@ p {
         width: 40%;
         padding-bottom: 20px;
     }
+    
+    h2 {
+        font-size: 2.5em;
+    }
 }
 
