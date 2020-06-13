@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="css/contact.css">
+
+
+    <title>Moja STU</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top topIcon" alt=""> Moja STU
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/PeHk/AcademicInformationSystem" target="_blank">GitHub</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="privacy.html">Všeobecné podmienky</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row firstSection justify-content-center">
+            <img src="img/contact.png" class="img-fluid contactInfo" alt="Contact info">
+            <a class="mail" href="mailto: p.hlavatik@gmail.com?subject=Aplikácia Moja STU">Kontaktovať</a>
+        </div>
+        
+        
+        
+        
+        
+        
+<!--        <div class="row firstSection align-items-center">-->
+<!--            <div class="col">-->
+<!--                <div class="contactMain">-->
+<!--                    <div class="row justify-content-center main">-->
+<!--                        <h2>Kontakt</h2>-->
+<!--                    </div>-->
+<!--                    <div class="row">-->
+<!--                        <div class="col leftpad">-->
+<!--                            <div class="row">-->
+<!--                                <p>Meno:</p>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <p>Adresa:</p>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <p>Telefónne číslo:</p>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <p>E-mail:</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col">-->
+<!--                            <div class="row">-->
+<!--                                <p>Peter Hlavatik</p>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <p>ČSA 1861/2a, Dolný Kubín</p>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <p>+421 917 416 497</p>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <a class="mail" href="mailto: p.hlavatik@gmail.com?subject=Aplikácia Moja STU">p.hlavatik@gmail.com</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    -->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+      
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Peter Hlavatík 2020 &copy; Moja STU</small>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        $(window).on("load",function() {
+          $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fade").each(function() {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight() - 300;
+              
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+              } 
+            });
+          }).scroll(); //invoke scroll-handler on page-load
+        });
+    </script>
+      
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
