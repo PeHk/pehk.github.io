@@ -51,4 +51,30 @@ body {
     margin-top: 20px;
 }
 
+@media (max-height: 650px) {
+    .mail {
+        top: 90%;
+        font-size: 15px;
+    }
+}
+
+@media (max-height: 550px) {
+    .mail {
+        top: 95%;
+        font-size: 10px;
+        padding: 7px 30px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-height: 450px) {
+    .mail {
+        top: 99%;
+        font-size: 7px;
+        padding: 7px 20px;
+        border-radius: 7px;
+    }
+}
+
+
 
