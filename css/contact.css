@@ -31,7 +31,7 @@ body {
     color: black;
     text-decoration: none;
     position: absolute;
-    top: 85%;
+    top: 80%;
     border: 0.4px solid #c9c9c9;
     padding: 10px 45px 10px 45px;
     border-radius: 15px;
@@ -50,6 +50,12 @@ body {
 .first {
     margin-top: 20px;
 }
+
+/*@media (max-height: 900px) {*/
+/*    .mail {*/
+/*        top: 80%;*/
+/*    }*/
+/*}*/
 
 @media (max-height: 650px) {
     .mail {
