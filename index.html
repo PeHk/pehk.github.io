@@ -41,23 +41,23 @@
 
             if (macosPlatforms.indexOf(platform) !== -1) {
                 os = 'Mac OS';
-                ga('send', 'event', 'iOS', 'ios');
+<!--                ga('send', 'event', 'iOS', 'ios');-->
                 window.location.replace(apps.iOS);
             } else if (iosPlatforms.indexOf(platform) !== -1) {
                 os = 'iOS';
-                ga('send', 'event', 'iOS', 'ios');
+<!--                ga('send', 'event', 'iOS', 'ios');-->
                 window.location.replace(apps.iOS);
             } else if (windowsPlatforms.indexOf(platform) !== -1) {
                 os = 'Windows';
-                ga('send', 'event', 'Android', 'android');
+<!--                ga('send', 'event', 'Android', 'android');-->
                 window.location.replace(apps.Android);
             } else if (/Android/.test(userAgent)) {
                 os = 'Android';
-                ga('send', 'event', 'Android', 'android');
+<!--                ga('send', 'event', 'Android', 'android');-->
                 window.location.replace(apps.Android);
             } else if (!os && /Linux/.test(platform)) {
                 os = 'Linux';
-                ga('send', 'event', 'iOS', 'ios');
+<!--                ga('send', 'event', 'iOS', 'ios');-->
                 window.location.replace(apps.iOS);
             }
 
