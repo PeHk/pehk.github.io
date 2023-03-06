@@ -41,24 +41,40 @@
 
             if (macosPlatforms.indexOf(platform) !== -1) {
                 os = 'Mac OS';
-<!--                ga('send', 'event', 'iOS', 'ios');-->
+                gtag('event', 'ios', {
+                    event_category: 'Redirect',
+                    event_action: 'iOS',
+                    event_label: 'iOS redirect'
+                });
                 window.location.replace(apps.iOS);
             } else if (iosPlatforms.indexOf(platform) !== -1) {
                 os = 'iOS';
-<!--                ga('send', 'event', 'iOS', 'ios');-->
-                window.location.replace(apps.iOS);
+                gtag('event', 'ios', {
+                    event_category: 'Redirect',
+                    event_action: 'iOS',
+                    event_label: 'iOS redirect'
+                });                window.location.replace(apps.iOS);
             } else if (windowsPlatforms.indexOf(platform) !== -1) {
                 os = 'Windows';
-<!--                ga('send', 'event', 'Android', 'android');-->
-                window.location.replace(apps.Android);
+                gtag('event', 'android', {
+                    event_category: 'Redirect',
+                    event_action: 'Android',
+                    event_label: 'Android redirect'
+                });                window.location.replace(apps.Android);
             } else if (/Android/.test(userAgent)) {
                 os = 'Android';
-<!--                ga('send', 'event', 'Android', 'android');-->
-                window.location.replace(apps.Android);
+                gtag('event', 'android', {
+                    event_category: 'Redirect',
+                    event_action: 'Android',
+                    event_label: 'Android redirect'
+                });                window.                window.location.replace(apps.Android);
             } else if (!os && /Linux/.test(platform)) {
                 os = 'Linux';
-<!--                ga('send', 'event', 'iOS', 'ios');-->
-                window.location.replace(apps.iOS);
+                gtag('event', 'ios', {
+                    event_category: 'Redirect',
+                    event_action: 'iOS',
+                    event_label: 'iOS redirect'
+                });                window.location.replace(apps.iOS);
             }
 
             return os;
